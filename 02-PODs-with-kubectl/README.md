@@ -23,6 +23,8 @@ kubectl run <desired-pod-name> --image <Container-Image> --generator=run-pod/v1
 
 # Replace Pod Name, Container Image
 kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0 --generator=run-pod/v1
+kubectl run ankita-pod --image=nginx:latest --restart=Never
+After V1.18 generator has outdated so using restart
 ```
 - **Important Note:** Without **--generator=run-pod/v1** it will create a pod with a deployment which is another core kubernetes concept which we will learn in next few minutes. 
 - **Important Note:**
