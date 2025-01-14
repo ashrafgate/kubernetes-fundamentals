@@ -88,6 +88,10 @@ kubectl get nodes -o wide
 ```
 http://<node1-public-ip>:<Node-Port>/hello
 ```
+kubectl create namespace my-namespace
+kubectl get namespaces
+kubectl config set-context --current --namespace=<namespace-name>
+
 
 ## Step-04: Test Replicaset Reliability or High Availability 
 - Test how the high availability or reliability concept is achieved automatically in Kubernetes
