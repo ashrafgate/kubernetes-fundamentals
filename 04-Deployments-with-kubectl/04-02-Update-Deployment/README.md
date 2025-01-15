@@ -23,6 +23,8 @@ kubectl set image deployment/my-first-deployment kubenginx=stacksimplify/kubengi
 # Verify Rollout Status 
 kubectl rollout status deployment/my-first-deployment
 
+kubectl rollout undo deploy mydeployment
+
 # Verify Deployment
 kubectl get deploy
 ```
