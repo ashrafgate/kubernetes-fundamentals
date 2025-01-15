@@ -81,6 +81,9 @@ http://<worker-node-public-ip>:<Node-Port>
 # Edit Deployment
 kubectl edit deployment/<Deployment-Name> --record=true
 kubectl edit deployment/my-first-deployment --record=true
+
+kubectl get deploy my-first-deployment -o yaml > mydeploy.yaml
+vim mydeploy.yaml
 ```
 
 ```yml
